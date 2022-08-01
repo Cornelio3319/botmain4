@@ -278,7 +278,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'MarlonSu'
+        tl_admin_user = 'Elpatron022'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -296,7 +296,7 @@ def onmessage(update,bot:ObigramClient):
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:
-            mensaje = "❌No tienes Acceso❌.❌ Por favor Contacta con mi Programador @Wachu985❌\n"
+            mensaje = "❌No tienes Acceso❌.❌ Por favor Contacta con mi Dueño @Elpatron022❌\n"
             #mensaje = 'EL Bot está en MANTENIMIENTO'
             intento_msg = "💢El usuario @"+username+ " ha intentado usar el bot sin permiso💢"
             bot.sendMessage(update.message.chat.id,mensaje)
@@ -608,7 +608,7 @@ def onmessage(update,bot:ObigramClient):
                 # set in debug
             #    api_id = 18693993
             #    api_hash = '382ee6b53bdd0df66a52ea9779c62424'
-            #    bot_token = '5120709357:AAGAR0mKIqP6GSdFFVK-7V_XIexX6XBNz60'
+            #    bot_token = '5459168096:AAETf99_Bv1SAdeNEMYowRMRm9uwpn-bhlI'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -624,7 +624,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5501890348:AAEAHNL9BSE2pOaC5s6EI5zxyn91zPuiilg'
+    bot_token = '5459168096:AAETf99_Bv1SAdeNEMYowRMRm9uwpn-bhlI'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
